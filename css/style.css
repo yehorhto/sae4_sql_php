@@ -1,0 +1,24 @@
+#proprietaire-existant,
+#proprietaire-nouveau,
+#vehicule-existant,
+#vehicule-nouveau {
+  display: none;
+}
+
+input[name="mode-proprietaire"][value="existant"]:checked
+  ~ #proprietaire-existant {
+  display: block;
+}
+
+input[name="mode-proprietaire"][value="nouveau"]:checked
+  ~ #proprietaire-nouveau {
+  display: block;
+}
+
+input[name="mode-vehicule"][value="existant"]:checked ~ #vehicule-existant {
+  display: block;
+}
+
+input[name="mode-vehicule"][value="nouveau"]:checked ~ #vehicule-nouveau {
+  display: block;
+}
